@@ -29,8 +29,8 @@ steps:
   displayName: 'Run services'
   inputs:
     containerregistrytype: 'Azure Container Registry'
-    azureSubscription: 'Azure subscription 1 (15d89fd3-501d-4102-82e4-2180684d1bcc)'
-    azureContainerRegistry: '{"loginServer":"acrdemolab25.azurecr.io", "id" : "/subscriptions/15d89fd3-501d-4102-82e4-2180684d1bcc/resourceGroups/akshandsonlab2/providers/Microsoft.ContainerRegistry/registries/acrdemolab25"}'
+    azureSubscription: ''
+    azureContainerRegistry: ''
     dockerComposeFile: 'docker-compose.ci.build.yml'
     action: 'Run services'
     detached: false
@@ -39,8 +39,8 @@ steps:
   displayName: 'Build services'
   inputs:
     containerregistrytype: 'Azure Container Registry'
-    azureSubscription: 'Azure subscription 1 (15d89fd3-501d-4102-82e4-2180684d1bcc)'
-    azureContainerRegistry: '{"loginServer":"acrdemolab25.azurecr.io", "id" : "/subscriptions/15d89fd3-501d-4102-82e4-2180684d1bcc/resourceGroups/akshandsonlab2/providers/Microsoft.ContainerRegistry/registries/acrdemolab25"}'
+    azureSubscription: ''
+    azureContainerRegistry: ''
     dockerComposeFile: 'docker-compose.yml'
     dockerComposeFileArgs: 'DOCKER_BUILD_SOURCE='
     action: 'Build services'
@@ -50,8 +50,8 @@ steps:
   displayName: 'Push services'
   inputs:
     containerregistrytype: 'Azure Container Registry'
-    azureSubscription: 'Azure subscription 1 (15d89fd3-501d-4102-82e4-2180684d1bcc)'
-    azureContainerRegistry: '{"loginServer":"acrdemolab25.azurecr.io", "id" : "/subscriptions/15d89fd3-501d-4102-82e4-2180684d1bcc/resourceGroups/akshandsonlab2/providers/Microsoft.ContainerRegistry/registries/acrdemolab25"}'
+    azureSubscription: ''
+    azureContainerRegistry: ''
     dockerComposeFile: 'docker-compose.yml'
     dockerComposeFileArgs: 'DOCKER_BUILD_SOURCE='
     action: 'Push services'
@@ -61,8 +61,8 @@ steps:
   displayName: 'Lock services'
   inputs:
     containerregistrytype: 'Azure Container Registry'
-    azureSubscription: 'Azure subscription 1 (15d89fd3-501d-4102-82e4-2180684d1bcc)'
-    azureContainerRegistry: '{"loginServer":"acrdemolab25.azurecr.io", "id" : "/subscriptions/15d89fd3-501d-4102-82e4-2180684d1bcc/resourceGroups/akshandsonlab2/providers/Microsoft.ContainerRegistry/registries/acrdemolab25"}'
+    azureSubscription: ''
+    azureContainerRegistry: ''
     dockerComposeFile: 'docker-compose.yml'
     dockerComposeFileArgs: 'DOCKER_BUILD_SOURCE='
     action: 'Lock services'
